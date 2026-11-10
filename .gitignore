@@ -1,0 +1,24 @@
+# 过程文档（内部溯源，不随实践对外发布）
+others/
+
+# 本地构建产物与依赖
+build/
+node_modules/
+*.zip
+
+# Terraform 本地状态、缓存与私密参数
+infra/.terraform/
+infra/*.tfstate
+infra/*.tfstate.*
+infra/terraform.tfvars
+infra/sch.json
+infra/tmp_diag.tf.removed-*
+
+# 运行时与编辑器产物
+__pycache__/
+*.py[cod]
+*.log
+.env
+.DS_Store
+.idea/
+.vscode/

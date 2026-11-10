@@ -1,0 +1,12 @@
+# 复制为 terraform.tfvars 后填入实际值。
+# 桶名需全局唯一；Domain ID 可在控制台「我的凭证 → API 凭证」查看。
+region          = "cn-north-4"
+app_name        = "obs-signed-url-upload"
+obs_bucket_name = "<your-globally-unique-bucket-name>"
+domain_id       = "<your-domain-id>"
+
+# 可选：收紧跨域来源（生产环境建议替换通配符）
+# cors_allowed_origins = ["https://your-site.example.com"]
+
+# 可选：轻量验证档，不创建网关专享实例与公网入口，改为直接调用函数
+# enable_public_api = false
