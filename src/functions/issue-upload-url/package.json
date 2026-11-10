@@ -1,0 +1,16 @@
+{
+  "name": "issue-upload-url",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Issue a time-limited PUT authorization URL for an OBS object",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ../../scripts/local-e2e/run_e2e.js"
+  },
+  "dependencies": {
+    "esdk-obs-nodejs": "^3.26.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
